@@ -1,0 +1,30 @@
+GET http://localhost:3000
+
+###
+POST http://localhost:3000/user/register
+Content-Type: application/json
+
+{   
+    "USER_NAME": "Hung",
+    "USER_PHONE":"0767822812",
+    "USER_EMAIL": "Hung12@gmail.com",
+    "USER_PASSWORD": "123456"
+}
+###
+POST http://localhost:3000/user/refresh-token
+
+###
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{   
+ 
+    "USER_EMAIL": "hung12@gmail.com",
+    "USER_PASSWORD": "123456"
+}
+###
+POST http://localhost:3000/user/logout 
+
+###
+GET http://localhost:3000/user/getlists
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIwMjgsImlhdCI6MTY5NTgzOTgwMiwiZXhwIjoxNjk1ODM5ODIyfQ.p869c8ilr9gpc0n0F6zqQ4HxlDzBmCEHRTP3mAlHi1I

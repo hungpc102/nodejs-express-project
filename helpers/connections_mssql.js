@@ -10,6 +10,7 @@ const sequelize = new Sequelize('DB_FOOD', 'sa', '123456aA@$', {
   },
 });
 
+
 // Kết nối cơ sở dữ liệu
 sequelize.authenticate()
   .then(() => {
